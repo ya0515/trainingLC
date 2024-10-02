@@ -1,0 +1,271 @@
+/* 基本設定 */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8ff; /* 淡い背景色 */
+    color: #333;
+}
+
+/* ヘッダー */
+header {
+    background-color: #4CAF50; /* 鮮やかな緑色 */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+/* ナビゲーション */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #45a049; /* 少し暗い緑色 */
+}
+
+/* セクション */
+section {
+    padding: 40px 20px;
+    background-color: #ffffff; /* 白色のセクション背景 */
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 1200px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+    font-size: 2em;
+    border-bottom: 2px solid #4CAF50; /* 緑色のボーダー */
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+/* カテゴリ */
+.category {
+    margin-bottom: 60px;
+}
+
+.category h3 {
+    margin-bottom: 20px;
+    color: #4CAF50; /* カテゴリ見出しの緑色 */
+    font-size: 1.5em;
+    text-align: center;
+}
+
+/* 横スクロールコンテナ */
+.scroll-container {
+    display: flex;
+    overflow-x: auto;
+    gap: 15px;
+    padding-bottom: 10px;
+}
+
+.scroll-container img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.scroll-container img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* フッター */
+footer {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+}
+
+footer p {
+    margin: 0;
+    font-size: 1em;
+}
+.about-section {
+    display: none;
+}
+/* お問い合わせセクションのスタイル */
+/* お問い合わせセクションのスタイル */
+#contact {
+    padding: 40px 20px;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 600px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* 見出しを中央揃え */
+#contact h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+    font-size: 2em;
+    border-bottom: 2px solid #4CAF50;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+/* フォーム全体を左寄せに配置 */
+#contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start; /* フォーム内の要素を左寄せ */
+}
+
+/* ラベルと入力フィールド */
+#contact label {
+    font-size: 1em;
+    color: #333;
+}
+
+#contact input, #contact textarea {
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%; /* フォームフィールドを親要素の幅に合わせる */
+    box-sizing: border-box;
+}
+
+/* 送信ボタン */
+#contact button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    align-self: flex-start; /* ボタンも左端に配置 */
+}
+
+#contact button:hover {
+    background-color: #45a049;
+}
+/* 画像コンテナのスタイル */
+.image-container {
+    position: relative;
+    width: 300px; /* 画像の幅を固定 */
+    height: 200px; /* 画像の高さを固定 */
+    display: inline-block;
+    flex-shrink: 0; /* 画像が縮小されないようにする */
+}
+
+/* 画像のスタイル */
+.clickable-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* 画像のアスペクト比を保ちながら表示 */
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.clickable-image:hover {
+    transform: scale(1.05); /* ホバー時に拡大 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* 概要テキストのスタイル */
+.image-description {
+    display: none; /* 初期状態では非表示 */
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 0.9em;
+    max-width: 90%;
+}
+
+/* 画像をクリックしたときに概要が表示されるスタイル */
+.image-container.active .image-description {
+    display: block; /* クリック後に表示 */
+}
+
+/* 横スクロールコンテナのスタイル */
+.scroll-container {
+    display: flex;
+    overflow-x: auto;
+    gap: 15px; /* 画像同士の間隔を確保 */
+    padding-bottom: 10px;
+}
+/* 基本のスタイルは既存のままでOK */
+
+/* メディアクエリを追加：スマホやタブレット向けのスタイル調整 */
+@media (max-width: 768px) {
+    /* 画像コンテナのサイズを画面に合わせる */
+    .image-container {
+        width: 100%;   /* 画像の幅を100%に設定し、親要素にフィットさせる */
+        height: auto;  /* 高さを自動調整 */
+    }
+
+    /* ナビゲーションを縦並びにする */
+    nav ul {
+        flex-direction: column; /* スマホではメニューを縦並びに */
+        gap: 10px;              /* メニュー項目の間隔を少し狭める */
+    }
+
+    nav ul li a {
+        padding: 10px; /* メニューリンクのパディングを小さめに調整 */
+    }
+
+    /* セクションのパディングを減らす */
+    section {
+        padding: 20px 10px; /* スマホ画面向けにセクションの余白を調整 */
+    }
+
+    /* スクロールコンテナの画像間のスペースを少し減らす */
+    .scroll-container {
+        gap: 10px;  /* 画像同士の間隔を小さくする */
+    }
+
+    /* フォームの幅を画面幅に合わせる */
+    iframe {
+        width: 100%;    /* Googleフォームなど埋め込み要素の幅を100%に */
+        height: 600px;  /* 高さを調整（必要に応じて変更可能） */
+    }
+}
+
+
+
+
+
